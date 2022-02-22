@@ -1,0 +1,15 @@
+body{
+    background-image: url('https://images.pexels.com/photos/2684383/pexels-photo-2684383.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+    text-align: center;
+}
+#title {
+    font-weight: bold;
+    font-size: xx-large;
+}
+#tagline {
+    font-style: italic;
+    font-size: large;
+}
+#genres {
+    font-size: large;
+}
