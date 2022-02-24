@@ -1,6 +1,20 @@
 body{
     background-image: url('https://images.pexels.com/photos/2684383/pexels-photo-2684383.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
     text-align: center;
+    
+}
+table{
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+td{
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
 }
 #title {
     font-weight: bold;
