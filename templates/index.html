@@ -1,25 +1,27 @@
 <html>
-    <head>
-        <link rel="stylesheet" href="/static/style.css">
-    </head>
-    <body>
-        <div id="account">
-            <p id="user">{{current_user.username}}</p>
-            <a href="{{logout}}">Logout</a>
-        </div>
-        <p id="title">{{title}}</p>
-        <p id="tagline">{{tagline}}</p>
-        <p id="genres">{{genres}}</p>
-        <image id="image" src="{{image}}">
+
+<head>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+    <div id="account">
+        <p id="user">{{current_user.username}}</p>
+        <a href="{{logout}}">Logout</a>
+    </div>
+    <p id="title">{{title}}</p>
+    <p id="tagline">{{tagline}}</p>
+    <p id="genres">{{genres}}</p>
+    <image id="image" src="{{image}}">
         <br>
         <br>For more information on the movie, click the link: <a id="url" href="{{url}}">Wikipedia Link</a>
         <form method="POST" action="/save">
-            <input name="movie id" value="{{movie_id}}" readonly/>
-            Rating (out of 10): <input type="text" name="rating"/>
+            <input name="movie id" value="{{movie_id}}" readonly />
+            Rating (out of 10): <input type="text" name="rating" />
             <br>
             <textarea name="comment" value="" placeholder="Please leave a comment"></textarea>
             <br>
-            <input type="submit" value="submit"/>
+            <input type="submit" value="submit" />
         </form>
         <table>
             <tr>
@@ -28,12 +30,14 @@
             {% for comment in comments %}
             <tr>
                 <td>
-                    <p>{{ comment.username }}</p>
-                    <p>{{ comment.rating }}</p>
+                    <p id="username">{{ comment.username }}</p>
+                    <hr>
+                    <p>{{ comment.rating }} / 10</p>
                     <p>{{ comment.comment }}</p>
                 </td>
             </tr>
             {% endfor %}
         </table>
-    </body>
+</body>
+
 </html>

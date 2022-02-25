@@ -1,24 +1,27 @@
 <html>
-    <head>
-        <link rel="stylesheet" href="/static/style.css">
-    </head>
-    <body>
-        <h1>
-            Sign Up Page
-        </h1>
-        <form method="POST" action="signup_form">
-            <input type="text" name="username" placeholder="Username"/>
-            <input type="submit" name="submit" value="submit"/>
-        </form>
-        {% with messages = get_flashed_messages() %}
-            {% if messages %}
-                <ul id="flashes" class="flashes">
-                    {% for message in messages %}
-                        <li>{{ message }}</li>
-                    {% endfor %}
-                </ul>
-            {% endif %}
-        {% endwith %}
-        <a id="url" href="{{url}}">Login</a>
-    </body>
+
+<head>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+    <h1>
+        Sign Up Page
+    </h1>
+    <form method="POST" action="signup_form">
+        <input type="text" name="username" placeholder="Username" />
+        <input type="submit" name="submit" value="submit" />
+    </form>
+    {% with messages = get_flashed_messages() %}
+    {% if messages %}
+    <ul id="flashes" class="flashes">
+        {% for message in messages %}
+        <li>{{ message }}</li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+    {% endwith %}
+    <a id="url" href="{{url}}">Login</a>
+</body>
+
 </html>
