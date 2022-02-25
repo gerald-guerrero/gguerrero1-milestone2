@@ -1,7 +1,5 @@
 body{
     background-image: url('https://images.pexels.com/photos/2684383/pexels-photo-2684383.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
-    text-align: center;
-    
 }
 table{
     border-color: black;
@@ -15,6 +13,15 @@ td{
     border-color: black;
     border-width: 1px;
     border-style: solid;
+}
+#account{
+    float: right;
+}
+#user{
+    text-align: right;
+}
+body{
+    text-align: center;
 }
 #title {
     font-weight: bold;

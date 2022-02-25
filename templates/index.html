@@ -3,6 +3,10 @@
         <link rel="stylesheet" href="/static/style.css">
     </head>
     <body>
+        <div id="account">
+            <p id="user">{{current_user.username}}</p>
+            <a href="{{logout}}">Logout</a>
+        </div>
         <p id="title">{{title}}</p>
         <p id="tagline">{{tagline}}</p>
         <p id="genres">{{genres}}</p>
